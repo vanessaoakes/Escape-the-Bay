@@ -1,0 +1,86 @@
+Fact,Fact Note,California,Washington,Oregon,New York,Illinois
+"Population estimates, July 1, 2018,  (V2018)",,"39,557,045","7,535,591","4,190,713","19,542,209","12,741,080"
+"Population estimates, July 1, 2017,  (V2017)",,"39,536,653","7,405,743","4,142,776","19,849,399","12,802,023"
+"Population estimates base, April 1, 2010,  (V2018)",,"37,254,523","6,724,540","3,831,075","19,378,124","12,831,572"
+"Population estimates base, April 1, 2010,  (V2017)",,"37,254,518","6,724,545","3,831,072","19,378,110","12,831,565"
+"Population, percent change - April 1, 2010 (estimates base) to July 1, 2018,  (V2018)",,6.20%,12.10%,9.40%,0.80%,-0.70%
+"Population, percent change - April 1, 2010 (estimates base) to July 1, 2017,  (V2017)",,6.10%,10.10%,8.10%,2.40%,-0.20%
+"Population, Census, April 1, 2010",,"37,253,956","6,724,540","3,831,074","19,378,102","12,830,632"
+"Persons under 5 years, percent",,6.30%,6.20%,5.70%,5.90%,6.00%
+"Persons under 18 years, percent",,22.90%,22.20%,21.10%,20.90%,22.60%
+"Persons 65 years and over, percent",,13.90%,15.10%,17.10%,15.90%,15.20%
+"Female persons, percent",,50.30%,50.00%,50.40%,51.40%,50.80%
+"White alone, percent",,72.40%,79.50%,87.10%,69.60%,77.10%
+"Black or African American alone, percent",(a),6.50%,4.20%,2.20%,17.70%,14.60%
+"American Indian and Alaska Native alone, percent",(a),1.60%,1.90%,1.80%,1.00%,0.60%
+"Asian alone, percent",(a),15.20%,8.90%,4.70%,9.10%,5.70%
+"Native Hawaiian and Other Pacific Islander alone, percent",(a),0.50%,0.80%,0.40%,0.10%,0.10%
+"Two or More Races, percent",,3.90%,4.70%,3.80%,2.50%,2.00%
+"Hispanic or Latino, percent",(b),39.10%,12.70%,13.10%,19.20%,17.30%
+"White alone, not Hispanic or Latino, percent",,37.20%,68.70%,75.80%,55.30%,61.30%
+"Veterans, 2013-2017",,"1,661,433","541,122","291,153","757,900","614,725"
+"Foreign born persons, percent, 2013-2017",,27.00%,13.80%,9.90%,22.70%,14.00%
+"Housing units,  July 1, 2017,  (V2017)",,"14,176,670","3,103,117","1,768,494","8,327,388","5,359,557"
+"Owner-occupied housing unit rate, 2013-2017",,54.50%,62.70%,61.70%,54.00%,66.10%
+"Median value of owner-occupied housing units, 2013-2017",,"$443,400 ","$286,800 ","$265,700 ","$293,000 ","$179,700 "
+"Median selected monthly owner costs -with a mortgage, 2013-2017",,"$2,206 ","$1,763 ","$1,594 ","$2,064 ","$1,633 "
+"Median selected monthly owner costs -without a mortgage, 2013-2017",,$542 ,$539 ,$497 ,$728 ,$603 
+"Median gross rent, 2013-2017",,"$1,358 ","$1,120 ",$988 ,"$1,194 ",$952 
+"Building permits, 2017",,"114,780","45,794","20,053","39,350","24,992"
+"Households, 2013-2017",,"12,888,128","2,755,697","1,571,631","7,302,710","4,818,452"
+"Persons per household, 2013-2017",,2.96,2.55,2.5,2.63,2.61
+"Living in same house 1 year ago, percent of persons age 1 year+, 2013-2017",,86.20%,82.40%,82.00%,89.40%,86.90%
+"Language other than English spoken at home, percent of persons age 5 years+, 2013-2017",,44.00%,19.10%,15.20%,30.60%,22.80%
+"Households with a computer, percent, 2013-2017",,90.20%,91.40%,90.50%,86.80%,86.70%
+"Households with a broadband Internet subscription, percent, 2013-2017",,82.60%,84.30%,81.90%,78.90%,78.40%
+"High school graduate or higher, percent of persons age 25 years+, 2013-2017",,82.50%,90.80%,90.20%,86.10%,88.60%
+"Bachelor's degree or higher, percent of persons age 25 years+, 2013-2017",,32.60%,34.50%,32.30%,35.30%,33.40%
+"With a disability, under age 65 years, percent, 2013-2017",,6.90%,9.00%,10.20%,7.50%,7.10%
+"Persons  without health insurance, under age 65 years, percent",,8.10%,7.10%,8.20%,6.60%,7.80%
+"In civilian labor force, total, percent of population age 16 years+, 2013-2017",,63.00%,63.40%,62.10%,63.10%,65.20%
+"In civilian labor force, female, percent of population age 16 years+, 2013-2017",,57.10%,58.30%,57.60%,58.60%,60.40%
+"Total accommodation and food services sales, 2012 ($1,000)",(c),"90,830,372","14,297,278","8,466,788","49,285,508","27,937,381"
+"Total health care and social assistance receipts/revenue, 2012 ($1,000)",(c),"248,953,592","43,966,889","24,956,816","155,666,053","83,431,778"
+"Total manufacturers shipments, 2012 ($1,000)",(c),"512,303,164","131,530,601","51,349,948","148,879,931","281,037,755"
+"Total merchant wholesaler sales, 2012 ($1,000)",(c),"666,652,186","83,313,366","48,325,261","341,734,970","295,456,992"
+"Total retail sales, 2012 ($1,000)",(c),"481,800,461","118,924,049","49,481,054","251,167,736","166,634,514"
+"Total retail sales per capita, 2012",(c),"$12,665 ","$17,243 ","$12,690 ","$12,834 ","$12,942 "
+"Mean travel time to work (minutes), workers age 16 years+, 2013-2017",,28.8,27.1,23.5,33,28.7
+"Median household income (in 2017 dollars), 2013-2017",,"$67,169 ","$66,174 ","$56,119 ","$62,765 ","$61,229 "
+"Per capita income in past 12 months (in 2017 dollars), 2013-2017",,"$33,128 ","$34,869 ","$30,410 ","$35,752 ","$32,924 "
+"Persons in poverty, percent",,13.30%,11.00%,13.20%,14.10%,12.60%
+"Total employer establishments, 2016",,"922,477","186,164","114,551","544,073","319,605"
+"Total employment, 2016",,"14,600,349","2,685,355","1,551,192","8,178,455","5,513,071"
+"Total annual payroll, 2016 ($1,000)",,"886,643,923","156,915,349","74,062,716","521,872,694","295,308,470"
+"Total employment, percent change, 2015-2016",,1.90%,3.20%,3.50%,2.20%,1.60%
+"Total nonemployer establishments, 2016",,"3,277,415","459,590","286,538","1,708,374","981,735"
+"All firms, 2012",,"3,548,449","541,522","339,305","2,008,988","1,135,017"
+"Men-owned firms, 2012",,"1,852,580","262,650","165,691","1,139,910","609,648"
+"Women-owned firms, 2012",,"1,320,085","187,677","123,015","725,709","417,500"
+"Minority-owned firms, 2012",,"1,619,857","92,807","41,456","709,021","311,684"
+"Nonminority-owned firms, 2012",,"1,819,107","426,697","285,028","1,248,304","795,129"
+"Veteran-owned firms, 2012",,"252,377","49,331","30,918","137,532","89,110"
+"Nonveteran-owned firms, 2012",,"3,176,341","461,401","288,790","1,811,544","1,006,885"
+"Population per square mile, 2010",,239.1,101.2,39.9,411.2,231.1
+"Land area in square miles, 2010",,"155,779.22","66,455.52","95,988.01","47,126.40","55,518.93"
+FIPS Code,,"""06""","""53""","""41""","""36""","""17"""
+,,,,,,
+NOTE: FIPS Code values are enclosed in quotes to ensure leading zeros remain intact.,,,,,,
+,,,,,,
+Value Notes,,,,,,
+1,Includes data not distributed by county.,,,,,
+,,,,,,
+Fact Notes,,,,,,
+(a),Includes persons reporting only one race,,,,,
+(b),"Hispanics may be of any race, so also are included in applicable race categories",,,,,
+(c),Economic Census - Puerto Rico data are not comparable to U.S. Economic Census data,,,,,
+,,,,,,
+Value Flags,,,,,,
+-,"Either no or too few sample observations were available to compute an estimate, or a ratio of medians cannot be calculated because one or both of the median estimates falls in the lowest or upper interval of an open ended distribution.",,,,,
+D,Suppressed to avoid disclosure of confidential information,,,,,
+F,Fewer than 25 firms,,,,,
+FN,Footnote on this item in place of data,,,,,
+NA,Not available,,,,,
+S,Suppressed; does not meet publication standards,,,,,
+X,Not applicable,,,,,
+Z,Value greater than zero but less than half unit of measure shown,,,,,

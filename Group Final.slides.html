@@ -13250,7 +13250,10 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Research Question to Answer: What are the motivating factors to move out of SF county?</p>
+<p>Question:</p>
+<ul>
+<li>The San Francisco County area and Bay area have some of the highest household incomes in the country due to a high concentration of high-paying high tech industries in Silicon Valley.  Yet many people are leaving San Francisco County.  The question is what motivates people to move?  What are some advantages of other counties?</li>
+</ul>
 
 </div>
 </div>
@@ -13258,9 +13261,11 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Parameters:
-Used latest data 2017 unless otherwise noted.
-To organize our data we have separated counties within California and Out of State.</p>
+<p>Parameters:</p>
+<ul>
+<li>Used latest data 2017 unless otherwise noted.</li>
+<li>To organize our data we have separated counties within California and Out of State.</li>
+</ul>
 
 </div>
 </div>
@@ -13270,7 +13275,8 @@ To organize our data we have separated counties within California and Out of Sta
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Research:</p>
 <ul>
-<li>We used census.gov and their datasets and used their API.</li>
+<li>We created csvs from <a href="https://www.census.gov">https://www.census.gov</a></li>
+<li>We also use an API</li>
 </ul>
 
 </div>
@@ -13521,7 +13527,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># California - Race</span>
@@ -13597,10 +13603,10 @@ To organize our data we have separated counties within California and Out of Sta
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">white</span><span class="p">,</span><span class="n">width</span><span class="p">)</span>
@@ -13635,19 +13641,6 @@ To organize our data we have separated counties within California and Out of Sta
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[55]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.legend.Legend at 0x1072fd080&gt;</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -14363,7 +14356,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
@@ -14512,7 +14505,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">race</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;White alone&quot;</span><span class="p">,</span> <span class="s2">&quot;Black or African American Alone&quot;</span><span class="p">,</span> <span class="s2">&quot;American Indian and Alaska Native alone&quot;</span><span class="p">,</span> <span class="s2">&quot;Asian alone&quot;</span><span class="p">,</span>
@@ -14549,45 +14542,16 @@ To organize our data we have separated counties within California and Out of Sta
 
 <span class="c1">#Hispanic or Latino</span>
 <span class="n">hispanic</span> <span class="o">=</span> <span class="n">out_race</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
-
-<span class="c1"># p1 = plt.bar(ind,white,width)</span>
-<span class="c1"># p2 = plt.bar(ind,aa,width, bottom=white)</span>
-<span class="c1"># p3 = plt.bar(ind,ai,width, bottom=white+aa)</span>
-<span class="c1"># p4 = plt.bar(ind,hawaiian,width, bottom=white+aa+ai)</span>
-<span class="c1"># p5 = plt.bar(ind,asian,width, bottom=white+aa+ai+hawaiian)</span>
-<span class="c1"># p6 = plt.bar(ind,two,width, bottom =white+aa+ai+hawaiian+asian)</span>
-<span class="c1"># p7 = plt.bar(ind,hispanic,width, bottom =white+aa+ai+hawaiian+asian+two)</span>
-
-
-
-
-<span class="c1"># plt.ylabel(&#39;By Percentage&#39;)</span>
-<span class="c1"># plt.title(&#39;Out of State: Race&#39;)</span>
-<span class="c1"># plt.xticks(ind, (&#39;San Francisco&#39;, &#39;Manhattan&#39;, &#39;King County (WA)&#39;, &#39;Multnomah County (OR)&#39;,</span>
-<span class="c1">#                  &#39;Brooklyn&#39;, &#39;Chicago&#39;),rotation=&#39;vertical&#39;)</span>
-
-                
-<span class="c1"># plt.legend((p1[0], p2[0], p3[0], </span>
-<span class="c1">#              p4[0], p5[0],p6[0], p7[0]),</span>
-<span class="c1">#             (&#39;White&#39;, &#39;African American&#39;, </span>
-<span class="c1">#              &#39;American Indian or Alaska Native&#39;,</span>
-<span class="c1">#              &#39;Hawaiian or Other Pacific&#39;, &#39;Asian&#39;, </span>
-<span class="c1">#              &#39;Two or More Races&#39;, &#39;Hispanic&#39;),loc=&#39;upper right&#39;,</span>
-<span class="c1">#            bbox_to_anchor =(1.65, 1.0))</span>
-
-<span class="c1"># plt.show()</span>
-
-<span class="c1"># #Mostly white. A lot of Hawaiian or Other Pacific in Chicago.</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">white</span><span class="p">,</span><span class="n">width</span><span class="p">)</span>
@@ -14643,14 +14607,12 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># California - Age</span>
 
 <span class="n">california_age</span> <span class="o">=</span><span class="n">california_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
-<span class="n">california_age</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-
 <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;Los Angeles County, California&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;Los Angeles County, California&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
 <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;Santa Clara County, California&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;Santa Clara County, California&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
 <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;Contra Costa County, California&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;Contra Costa County, California&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
@@ -14658,8 +14620,6 @@ To organize our data we have separated counties within California and Out of Sta
 <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;Alameda County, California&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;Alameda County, California&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
 <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;San Francisco County, California&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">california_age</span><span class="p">[</span><span class="s1">&#39;San Francisco County, California&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
 
-
-<span class="c1"># california_age[&#39;Fact&#39;] = california_age[&#39;Fact&#39;].apply(lambda x: x[])</span>
 <span class="n">california_age</span>
 </pre></div>
 
@@ -14673,7 +14633,7 @@ To organize our data we have separated counties within California and Out of Sta
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -14749,7 +14709,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># California - Age (bar)</span>
@@ -14781,10 +14741,10 @@ To organize our data we have separated counties within California and Out of Sta
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Plot</span>
@@ -14835,7 +14795,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Out of California: Age</span>
@@ -14871,7 +14831,7 @@ To organize our data we have separated counties within California and Out of Sta
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -14944,164 +14904,22 @@ To organize our data we have separated counties within California and Out of Sta
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;Cook County, Illinois&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;Cook County, Illinois&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
-<span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;Kings County (Brooklyn Borough), New York&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;Kings County (Brooklyn Borough), New York&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
-<span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;Multnomah County, Oregon&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;Multnomah County, Oregon&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
-<span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;King County, Washington&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;King County, Washington&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
-<span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;New York County (Manhattan Borough), New York&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;New York County (Manhattan Borough), New York&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
-<span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;San Francisco County, California&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">out_age</span><span class="p">[</span><span class="s1">&#39;San Francisco County, California&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
-
-
-<span class="c1"># out_age[&#39;Fact&#39;] = out_age[&#39;Fact&#39;].apply(lambda x: x[:-9])</span>
-<span class="n">out_age</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[13]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Fact</th>
-      <th>San Francisco County, California</th>
-      <th>New York County (Manhattan Borough), New York</th>
-      <th>King County, Washington</th>
-      <th>Multnomah County, Oregon</th>
-      <th>Kings County (Brooklyn Borough), New York</th>
-      <th>Cook County, Illinois</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>4</th>
-      <td>Persons under 5 years, percent</td>
-      <td>4.5</td>
-      <td>4.8</td>
-      <td>5.9</td>
-      <td>5.6</td>
-      <td>7.3</td>
-      <td>6.2</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Persons under 18 years, percent</td>
-      <td>13.4</td>
-      <td>14.4</td>
-      <td>20.4</td>
-      <td>19.1</td>
-      <td>22.9</td>
-      <td>22.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Persons 65 years and over, percent</td>
-      <td>15.4</td>
-      <td>16.0</td>
-      <td>13.0</td>
-      <td>13.0</td>
-      <td>13.5</td>
-      <td>14.3</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Out of State: Age</span>
-
-<span class="n">county</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;San Francisco County, California&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;New York County (Manhattan Borough), New York&#39;</span><span class="p">,</span> 
-                 <span class="s1">&#39;King County, Washington&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;Multnomah County, Oregon&#39;</span><span class="p">,</span> 
-                 <span class="s1">&#39;Kings County (Brooklyn Borough), New York&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;Cook County, Illinois&#39;</span><span class="p">]</span>
-
-<span class="n">age</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;under 5 years&#39;</span><span class="p">,</span><span class="s1">&#39;under 18 years&#39;</span><span class="p">,</span><span class="s1">&#39;65 years and over, percent&#39;</span><span class="p">]</span>
-
-<span class="n">N</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="n">ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
-<span class="n">width</span> <span class="o">=</span> <span class="mf">0.50</span>
-
-<span class="c1"># #Under 5</span>
-<span class="n">under_5</span> <span class="o">=</span> <span class="n">out_age</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
-
-<span class="c1"># #Under 18</span>
-<span class="n">under_18</span> <span class="o">=</span> <span class="n">out_age</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
-
-<span class="c1"># #Over 65</span>
-<span class="n">over_65</span> <span class="o">=</span> <span class="n">out_age</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
-
-<span class="c1"># #18-65</span>
-<span class="n">middle_age</span> <span class="o">=</span> <span class="mi">100</span><span class="o">-</span><span class="n">under_5</span><span class="o">-</span><span class="n">under_18</span><span class="o">-</span><span class="n">over_65</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># #Plot</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Plot</span>
 <span class="n">p1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">under_5</span><span class="p">,</span><span class="n">width</span><span class="p">)</span>
 <span class="n">p2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">under_18</span><span class="p">,</span><span class="n">width</span><span class="p">,</span><span class="n">bottom</span><span class="o">=</span><span class="n">under_5</span><span class="p">)</span>
 <span class="n">p3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">middle_age</span><span class="p">,</span><span class="n">width</span><span class="p">,</span><span class="n">bottom</span><span class="o">=</span><span class="n">under_5</span><span class="o">+</span><span class="n">under_18</span><span class="p">)</span>
 <span class="n">p4</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">over_65</span><span class="p">,</span><span class="n">width</span><span class="p">,</span><span class="n">bottom</span><span class="o">=</span><span class="n">under_5</span><span class="o">+</span><span class="n">under_18</span><span class="o">+</span><span class="n">middle_age</span><span class="p">)</span>
 
-
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">((</span><span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p3</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">p4</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
            <span class="p">(</span><span class="s1">&#39;Under 5&#39;</span><span class="p">,</span> <span class="s1">&#39;Under 18&#39;</span><span class="p">,</span> <span class="s1">&#39;18-65&#39;</span><span class="p">,</span> 
             <span class="s1">&#39;Over 65&#39;</span><span class="p">,),</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper right&#39;</span><span class="p">,</span>
           <span class="n">bbox_to_anchor</span> <span class="o">=</span><span class="p">(</span><span class="mf">1.65</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">))</span>
-
-
 
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;By Percentage&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Out of State: Age&#39;</span><span class="p">)</span>
@@ -15142,7 +14960,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># California - Marital Male (bar)</span>
@@ -15179,32 +14997,10 @@ To organize our data we have separated counties within California and Out of Sta
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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6VBUVNQ46nrVJtEtWc8B44Dbws/PVjp/pZk9ARwDbIl1K0Zl5JtXRPn4aixKcHnpS9872R/p51Kkdq1bt66YP3/+wpdffrnl66+/3nLcuHGH33zzzSsr39OoUSM/++yztwAMGjRo+7Rp01oBzJ49O/vVV1/9GGD8+PEbJk2a1LXq86dNm9aqqKio+XPPPdcWYOvWrZkLFy5smpeXtzv62lUvsiTLzB4HTgDam9lK4BaC5OpvZnYRsAI4K7z9n8CpwMdACXBBVHEdKBL7C1+/7OMl3f9Q6+dS5MCWlZXF6NGjt44ePXprv379djz66KMHVbnuGRkZe+4tKyurbjhRtdzdfv/7368488wzi+Mc9j6LcnbhD9y9k7s3cveu7v6gu29w9xPdvVf4eWN4r7v7Fe5+uLv3dfeZUcUlIiIiiVdYWNhk3rx5TWLHs2fPbta1a9d6tTINGDBg28MPP9wW4M9//nO76u755je/ueW+++7rsGvXLgOYO3duk+Li4qSubq+l9UVERCRyxcXFmeeff36Pww8/vE9ubm5+UVFRs9/85jfVjr+u6p577vn8nnvu6di3b98j1qxZ0yg7O7u86j3XXHPN+ry8vJ19+/Y9olevXn0uvvjiQ0tLS+vdEhaF/WV2oYiIiCRIfZZciLdhw4aVzJ49u6jq+Q8++GBx7HXlGYMXXHDBpgsuuGATQE5OTumcOXOKMjIymDJlStu+fftuB+jdu/fupUuXLgDIzMzkD3/4wypgVeSVqSclWSIiIrJfe+edd5pfddVV3d2dVq1alT/88MPLkx1TfSjJEhERkf3aKaecsm3x4sULkx3H3tKYLBEREZEIKMkSERERiYCSLBEREZEIKMkSERERiYCSLBEREYmcmQ06/fTTe8SOS0tLadu2bf8RI0b0bOizBw4cmLc391977bWdb7755o4NLbcuml0oIiJyoJnUelB8n7elznW3mjVrVrF48eJm27Zts+zsbJ86dWqrjh07VrvZc01KS0tp1KjRnuOysjKysrKobv2t/YGSLBGROPj+TxP763ReQksTiY8TTzxxy1NPPdXmggsu2PT444+3O/PMMze+++672QBvvPFG82uvvbb7zp07M5o2bVrx8MMPf9q/f/9dd99990EvvfRS6127dmWUlJRk/PznP19z6623djr44INLFy5c2HzZsmULmjdvPjC2kOlNN93UcerUqe12795tp5122uY777xzNcDEiRMPefLJJ9t37tx590EHHVQ6cODAkqjrq+5CERERSYjzzjtv45NPPtm2pKTEFi1a1HzIkCHbY9f69++/84MPPihatGjRwltuuWXVT37yk66xax999FH2448//ul77723BGDu3Lktfve7361atmzZgsrPf+aZZ1p9/PHHTefOnbto0aJFC+fMmdP8pZdeyn777bebT506td28efMWvvDCCx8XFha2SER9D9iWrHT/X2ci65fOdQO1GMRTOv9cikjdjjnmmB0rV65scv/997c76aSTtlS+tnHjxswxY8b0WL58eVMz88r7Dg4bNqy4Y8eOe/Yr7Nev3/a8vLyvbS798ssvt5oxY0ar/Pz8fICSkpKMoqKiplu3bs049dRTN7ds2bIC4OSTT94cXS2/pJYsERERSZhTTjll8y233NLt/PPP31j5/MSJE7scf/zxW5cuXbrg+eef/3j37t17cpTmzZtXVL636nGMu3P11VevKSoqWlhUVLRwxYoV86+55pr1AGaJ3yv6gG3JEtkfqZUudc37dEWyQxBJCZdddtn61q1blw8ePHjHCy+80DJ2vri4OLNr1667ASZPntx+X549atSo4kmTJnW+5JJLNrZu3bri008/bdS4cWMfOXLktgsvvDDn1ltvXVNaWmqvvfZam3Hjxq2LV51qcsAmWfqFKCIikniHH3546U033bS26vmJEyd+MX78+B533333IcOGDSvel2d/97vfLV6wYEHTo48+Og+CFq/HHnvs06FDh5acccYZG4888sg+Xbp02TV48OBtDa1HfZi7J6KcSBQUFPjMmTP37c2TWsc3mDrL21L3PXEtL4H1S+e6QULr1/eRvgkrC2DeuMS2ZSWyfomuWyr9XJrZLHcviGM0sp8rLCxc3r9///XJjiMdFRYWtu/fv39OddcO2JYsEUk8tSCLyIFESZbIfkRJiIhI+tDsQhEREZEIKMkSERERiYCSLBEREZEIKMkSERERiYCSLBEREYnURRdd1O2Xv/zlwbHjoUOH9hozZsyhseOLL76464033njIKaecclh17x88eHDvGTNmNI86zsWLFzfu1atXn3g9T7MLRUREDjB9H+k7KJ7Pmzdu3qzarn/jG9/Y9vTTT7cF1paXl7Np06asbdu2Zcauf/jhh9l33HHH57fddtsX8Ywr2dSSJSIiIpEaOXLktlmzZmUDzJo1q1nv3r13tGjRonzdunWZO3bssGXLljVt3759WawVadu2bTZ69OjDcnNz80877bTDdu7cuWfjwcmTJ7fLzc3N79WrV5/LLrusC8ADDzzQdvz48V0Bbr311oO7du3aF2DBggVNBg0a1Bvg7bffbn700Uf37tOnzxFDhw7t9dlnnzWKne/du3f+gAED8u64446DiSMlWSIiIhKpnJyc0qysLF+6dGnjt956q8Wxxx67vaCgYPv06dOzwyRnR5MmTfZsQXP77bcf3KxZs4olS5YsvPnmm9csXLiwBcDy5csbTZo0qcubb765ZOHChQtmz57d4tFHH21z8sknb33vvfdaArzzzjvZbdq0Kfv0008bTZ8+PfvYY4/dtmvXLpswYUL3Z599dtmCBQsWjRs3bv3111/fBeCiiy7KueOOO1bMmTOnKN71VnehiIiIRG7QoEHb3njjjRb//ve/s2+44Yb/rFixovE777zTItws+it7Cf7rX//KnjBhwlqAY445Zkdubm5JeL7Fscceu7Vz585lAGPGjNn41ltvZZ933nmbS0pKMjZt2pSxevXqxmedddaGV199teW//vWv7O9+97ub586d22Tp0qXNRo4cmQtQUVFBhw4dSjds2JC5devWzNNOO20bwIUXXrhh+vTpcdsjS0mWiIiIRG7IkCHb3n333eyioqJmRx999I7DDjts91133dUxOzu7/IILLvjavopm9rVn1Lbf8qBBg7bfe++97Q8//PCdI0aM2DZlypT2s2bNyv7jH/+4ctmyZY179uy5o2pr1fr16zOrKyde1F0oIiIikTv++OO3TZs2rU2bNm3Ks7Ky6NixY3lxcXHm7Nmzs0eMGLG98r1Dhw7d9te//rUdwIcffth0yZIlzQGGDx++/f3332+5Zs2arLKyMp566ql2J5xwwjaAYcOGbb333ns7Dhs2bNtxxx1X8u6777Zs3LhxxUEHHVTer1+/nRs3bsyaNm1aC4Bdu3bZzJkzm7Zv3748Ozu7/JVXXskGePjhh9vFs85KskRERCRygwcP3rF58+asgoKCPV2DeXl5O7Kzs8s7depUVvne66+/fu327dszc3Nz83/1q18d0rdv3+0Ahx56aOnNN9+86vjjj8894ogj+vTr16/k3HPP3Qxw4oknbvviiy8an3TSSVuzsrLo1KnT7lg3ZNOmTf2JJ55YduONN3bt3bt3fp8+ffLfeuutbIAHH3xw+YQJE7oPGDAgr1mzZjU3le0Dq63pbX9XUFDgM2fO3Lc3T4pbl2s9y9uS4PISWL90rhsktn7pXDfQz2Vcy9v3+pnZLHcviGM0sp8rLCxc3r9//691yUnDFRYWtu/fv39OddeS0pJlZteY2QIzm29mj5tZUzPrYWbvm9lSM3vSzBonIzYRERGReEh4kmVmXYAJQIG7HwlkAmcDvwHudPdewCbgokTHJiIiIhIvyRqTlQU0M7MsoDmwBhgJPB1efwQ4PUmxiYiIiDRYwpMsd18F3A6sIEiutgCzgM3uHhv4thLokujYREREROIlGd2FbYHvAD2AzkALYFQ1t1Y7It/MLjGzmWY2c926ddEFKiIiItIAyeguPAn41N3XuXsp8AxwHNAm7D4E6Aqsru7N7j7F3QvcvaBDhw6JiVhERERkLyUjyVoBHGtmzS1YZvVEYCHwBvC98J5xwLNJiE1EREQikJmZOSgvLy+/Z8+efXr37p0/adKkjuXl5QDMmDGj+Q9/+MNuSQ6RF154oeWIESN6xut5Cd9Wx93fN7OngY+AMmA2MAV4EXjCzP47PPdgomMTERE5ECzKO2JQPJ93RNGiWXXd06RJk4qioqKFAKtWrco666yzDtuyZUvmnXfeuXr48OElw4cPL2loHKWlpTRq1Kihj4mbpMwudPdb3D3P3Y909/PcfZe7f+Lug929p7uf5e67khGbiIiIRKtLly5lDzzwwPKHHnro4IqKij0tSOXl5XTp0qXv+vXrM2P3du/e/cjPP/88a8mSJY2HDBmSm5ubmz9kyJDcpUuXNgY488wzc8aPH9/1mGOOyb388su7btmyJeN73/teTm5ubn5ubm7+ww8/3AbgmWeeaTVgwIC8/Pz8I0aNGnXYli1bMgCefvrpVj169OgzaNCg3k8//XSbeNZT2+qIiIhIwuXn5++uqKhg1apVe3rVMjMzOfnkkzc/9thjbQCmT5/eomvXrru7detWdumll3YfO3bshiVLliwcM2bMhssuu2xP9+KyZcuavvPOO0vuv//+lTfeeGOnVq1alS9ZsmThkiVLFp522mlb16xZk/WrX/2q04wZM5YsXLhw0VFHHVVy6623diwpKbErr7wy57nnnvv4ww8/XLx27dq4NoMpyRIREZGkqG5rv7Fjx258+umn2wE89thj7c4888yNALNnz25xySWXbAS47LLLNs6aNSs79p7vfve7m7KyglxtxowZra655pq1sWsdOnQof/PNN1ssW7as6eDBg/Py8vLyn3jiiYNWrFjReM6cOU27du26q2/fvrsyMjI455xzNsSzfkqyREREJOEWLlzYODMzky5dunxlc+gTTzxx+2effdZk9erVWS+//HKbc845Z1Ndz8rOzq6IvXZ3gnl1X3J3hg4dWlxUVLSwqKho4bJlyxb87W9/+wz42r3xpCRLREREEmr16tVZF1988aEXXHDB2oyMr6YiGRkZjBo1avPll1/erWfPnjsOOeSQcoCBAwduf+CBB9oCTJ48uV1BQcG26p59wgknFN9xxx0Hx47XrVuXecIJJ2yfOXNm9vz585sAbN26NWPu3LlNBgwYsHPlypWNFyxY0ATgiSeeaBfPeirJEhERkcjt2rUrI7aEw4gRI3JPPPHE4ttvv73aNTHPOeecjc8++2y7733ve3tase67774Vjz76aPvc3Nz8xx9//KA//vGPn1f33l//+tdrNm/enNmrV68+vXv3zv/nP//ZsnPnzmWTJ09efvbZZx+Wm5ubP2jQoLx58+Y1bd68ud9zzz2fjR49uuegQYN6d+vWbXc862zV9YemioKCAp85c+a+vXlS6/gGU2d5WxJcXgLrl851g8TWL53rBvq5jGt5+14/M5vl7gVxjEb2c4WFhcv79++/PtlxpKPCwsL2/fv3z6numlqyRERERCKgJEtEREQkAkqyRERERCKgJEtEREQkAkqyRERERCKgJEtEREQkAkqyREREJCEmTpx4SM+ePfvk5ubm5+Xl5U+fPr1FomNYv3595m233dZhb9937bXXdr755ps77s17suq+RURERNLJvZdOHxTP513xp5Gz6rpn2rRpLV555ZU28+bNW9isWTNfs2ZN1q5duyLZ06a0tJRGjarf63nDhg2ZDz744ME33njjuijKrkwtWSIiIhK5VatWNWrXrl1Zs2bNHKBTp05lOTk5pW+//Xbzo48+unefPn2OGDp0aK/PPvusEcDgwYN7X3jhhd0GDhyY16tXrz5vvPFGc4A33nij+cCBA/OOOOKI/IEDB+YVFhY2Abj77rsPGjVq1GEjR47sOWzYsNwtW7ZkDBky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
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">male_single</span><span class="p">,</span><span class="n">width</span><span class="p">)</span>
@@ -15212,7 +15008,6 @@ To organize our data we have separated counties within California and Out of Sta
 <span class="n">p3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">male_widowed</span><span class="p">,</span><span class="n">width</span><span class="p">,</span><span class="n">bottom</span> <span class="o">=</span> <span class="n">male_single</span><span class="o">+</span><span class="n">male_married</span><span class="p">)</span>
 <span class="n">p4</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">male_divorced</span><span class="p">,</span><span class="n">width</span><span class="p">,</span><span class="n">bottom</span> <span class="o">=</span><span class="n">male_single</span><span class="o">+</span><span class="n">male_married</span><span class="o">+</span><span class="n">male_widowed</span><span class="p">)</span>
 <span class="n">p5</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">male_separated</span><span class="p">,</span><span class="n">width</span><span class="p">,</span><span class="n">bottom</span><span class="o">=</span> <span class="n">male_single</span><span class="o">+</span><span class="n">male_married</span><span class="o">+</span><span class="n">male_widowed</span><span class="o">+</span><span class="n">male_divorced</span><span class="p">)</span>
-
 
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">((</span><span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p3</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p4</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p5</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
            <span class="p">(</span><span class="s1">&#39;Single&#39;</span><span class="p">,</span> <span class="s1">&#39;Married&#39;</span><span class="p">,</span> <span class="s2">&quot;Widowed&quot;</span><span class="p">,</span> <span class="s2">&quot;Divorced&quot;</span><span class="p">,</span> <span class="s2">&quot;Separated&quot;</span><span class="p">),</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper right&#39;</span><span class="p">,</span>
@@ -15255,7 +15050,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Female Marital Status</span>
@@ -15314,20 +15109,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Out of State: Male Marital Status</span>
@@ -15350,10 +15132,10 @@ To organize our data we have separated counties within California and Out of Sta
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">male_single</span><span class="p">,</span><span class="n">width</span><span class="p">)</span>
@@ -15404,7 +15186,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Out of state: Female Marital Status</span>
@@ -15460,7 +15242,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Emily&#39;s housing analysis using census API</span>
@@ -15536,7 +15318,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collect median home values by county and add to data frames</span>
@@ -15600,7 +15382,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot in-CA median home values</span>
@@ -15626,7 +15408,7 @@ To organize our data we have separated counties within California and Out of Sta
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -15658,7 +15440,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot non-CA median home values</span>
@@ -15684,7 +15466,7 @@ To organize our data we have separated counties within California and Out of Sta
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -15716,7 +15498,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#follow the same process for median gross rents</span>
@@ -15780,7 +15562,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot in-CA median rents</span>
@@ -15806,7 +15588,7 @@ To organize our data we have separated counties within California and Out of Sta
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -15838,7 +15620,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot non-CA median rents</span>
@@ -15864,7 +15646,7 @@ To organize our data we have separated counties within California and Out of Sta
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -15896,7 +15678,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#follow the same process for home owner rate</span>
@@ -15976,7 +15758,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot in-CA home own rates</span>
@@ -16002,7 +15784,7 @@ To organize our data we have separated counties within California and Out of Sta
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -16034,7 +15816,7 @@ To organize our data we have separated counties within California and Out of Sta
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot non-CA home own rates</span>
@@ -16060,7 +15842,7 @@ To organize our data we have separated counties within California and Out of Sta
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -16109,7 +15891,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Rebeccas Files to load</span>
@@ -16130,7 +15912,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -16285,7 +16067,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Clean up the raw data - </span>
@@ -16336,7 +16118,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -16438,7 +16220,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Rename the columns to shorten the names for plotting, look at the DataFrame</span>
@@ -16478,7 +16260,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -16602,7 +16384,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># First remove all the $, % or ,  characters from the dataframe</span>
@@ -16635,7 +16417,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -16751,7 +16533,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remove extraneous rows, keep only the row you want -- Median Wages</span>
@@ -16773,7 +16555,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[38]:</div>
 
 
 
@@ -16836,7 +16618,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now setup x and y axes for the bar plot</span>
@@ -16903,7 +16685,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_axis</span><span class="p">,</span> <span class="n">median_income</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
@@ -16940,7 +16722,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[40]:</div>
 
 
 
@@ -16972,7 +16754,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x2_axis</span><span class="p">,</span> <span class="n">median_income_nonCA</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
@@ -17010,7 +16792,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -17069,7 +16851,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Dependencies and Setup</span>
@@ -17094,7 +16876,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -17275,7 +17057,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Rename Columns to be more understandable</span>
@@ -17319,7 +17101,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -17524,7 +17306,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ACS_dataT</span> <span class="o">=</span> <span class="n">ACS_data</span><span class="o">.</span><span class="n">T</span>
@@ -17556,7 +17338,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -17682,7 +17464,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Rename the columns, look at the DataFrame</span>
@@ -17715,7 +17497,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[40]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -17841,7 +17623,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Move the Facts into the index to get it out of the way since we don&#39;t need to clean the numbers in that column</span>
@@ -17876,7 +17658,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[41]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
@@ -18002,7 +17784,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Reorder the columns - SF first, then CA by migration amount,  then out-of-CA by migration amount</span>
@@ -18023,7 +17805,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Setup bins for the stacked bar plot</span>
@@ -18051,7 +17833,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[43]:</div>
+    <div class="prompt output_prompt">Out[48]:</div>
 
 
 
@@ -18080,7 +17862,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mf">0.50</span>
@@ -18142,7 +17924,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mortgage_amt</span> <span class="o">=</span> <span class="n">ACS_dataT</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span>
@@ -18168,7 +17950,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p0</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_axis</span><span class="p">,</span><span class="n">below_50K</span><span class="p">,</span><span class="n">width</span><span class="p">)</span>
@@ -18226,7 +18008,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ratio_debt_to_income</span> <span class="o">=</span> <span class="n">ACS_dataT</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">17</span><span class="p">:</span><span class="mi">21</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span>
@@ -18243,7 +18025,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[47]:</div>
+    <div class="prompt output_prompt">Out[52]:</div>
 
 
 
@@ -18354,7 +18136,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Setup bins for the debt to income ratio stacked bar plot</span>
@@ -18468,9 +18250,17 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div>
 </div>
 </div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Industry</p>
+
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Stefan&#39;s number of businesses analysis</span>
@@ -18513,7 +18303,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#create lists to hold values in interest from our 11 selected counties and append the values using the FIPS code</span>
@@ -18581,7 +18371,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># set width of bar</span>
@@ -18635,7 +18425,7 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Generate Grouped-Bar Graphs</span>
@@ -18688,51 +18478,35 @@ Reference:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>References
 Reference for Median Household Income:  <a href="https://www.census.gov/quickfacts/fact/table/US/PST045218">https://www.census.gov/quickfacts/fact/table/US/PST045218</a></p>
-<ul>
-<li>The San Francisco County area and Bay area have some of the highest household incomes in the country due to a high concentration of high-paying high tech industries in Silicon Valley.  Yet many people are leaving San Francisco County.  The question is what motivates people to move?  What are some advantages of other counties?</li>
-</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Conclusions</p>
+<p>Within California:</p>
 <ul>
-<li><p>The biggest migration path from SF County is to neighboring counties, in particular the East Bay (Alameda, Contra Costa), and South Bay (San Mateo, Santa Clara).</p>
+<li><p>The biggest migration path from SF County is to neighboring counties, in particular the East Bay (Alameda, Contra Costa), and South Bay (San Mateo, Santa Clara). Mostly people with median incomes are more likely to leave SF.</p>
 </li>
 <li><p>Home ownership is one major attraction - as shown by the Home ownership data.  SF County has the lowest percentage of home ownership (35%) in CA for this study.  SF County home ownership is similar to other high density counties such as Manhattan and Brooklyn.  All other counties have much higher home ownership -- typically 50% or more home ownership.</p>
 </li>
 <li><p>With the East Bay - the major attraction is the lower median housing price, in 2017, nearly 35%-45% less than SF county.</p>
 </li>
-<li><p>With the South Bay - the median prices are not much lower than SF county. However, the demographic age and marital status data shows that most counties, including South Bay have more married folks, and more children.  The South Bay has very high home values - and has the highest incomes (+15% more than SF County). Homes are likely to be larger, or having backyards or green spaces, and better school districts,  as a primary attraction, despite the very high prices.</p>
+<li><p>With the South Bay - the median prices are not much lower than SF county. However, the demographic age and marital status data shows that most counties, including South Bay have more married folks, and more children.  The South Bay has very high home values - and has the highest incomes (+15% more than SF County). Homes are likely to be larger, or having backyards or green spaces, and better school districts, as a primary attraction, despite the very high prices.</p>
 </li>
 <li><p>Los Angeles is the only Southern CA county in the top 5 of CA destinations. Analysis of number of Industries in Los Angeles shows LA has very large number of establishments.  This suggests that access to more opportunities for family members to be a potential attraction.</p>
 </li>
-<li><p>San Francisco county incomes are high; similar to San Mateo and Santa Clara Counties. There is roughly a -15% difference in household income, between SF and East Bay (East Bay having relatively lower median income) and +15% difference between SF and South Bay (South Bay having relatively higher median incomes). Thus the Median Income trend matches well to the Median House Values - higher median income areas tend to also have higher median housing values.</p>
+<li><p>San Francisco county incomes are high; similar to San Mateo and Santa Clara Counties. There is roughly a -15% difference in household income, between SF and East Bay (East Bay having relatively lower median income) and +15% difference between SF and South Bay (South Bay having relatively higher median incomes). Thus, the Median Income trend matches well to the Median House Values - higher median income areas tend to also have higher median housing values.</p>
 </li>
-<li><p>Median Incomes in Los Angeles County are significantly lower than in the Bay area  (~ &gt; 30% lower), likely attributable to the number and diversity of industries and employers, as well as the population size</p>
-</li>
-<li><p>Outside of California,  Median Incomes are substantially lower than San Francisco County, from 15% to 50% lower.  This is likely do to with the diversity of industries, employers and population size.   However, if tech workers can telecommute, then they likely will enjoy SF County incomes, while living in substantially lower housing cost areas.</p>
-</li>
-<li><p>Renting versus owning: In SF County, since housing values are so high, many are renters.  The median monthly rents are very similar in East Bay, and even higher in South Bay.  Thus renting in a different Bay Area county is not likely a major attraction to move.  However, in LA or in other states, especially in Multnomah, Brooklyn, and Cook County, significant monthly rental savings are likely an attraction.</p>
-</li>
-<li><p>Signifcant savings in housing, due to lower home values,  requiring lower mortgage amounts (or alternatively getting more house for the same house value), and attractive housing debt-to=income ratio are all compelling reasons for outof-CA migration.</p>
-</li>
-<li><p>Outside of California, one main attraction to be move is the much higher number of industries in the counties, which could provide jobs to family members in the household who are not in the tech industry.</p>
+<li><p>Median Incomes in Los Angeles County are significantly lower than in the Bay area (~ &gt; 30% lower), likely attributable to the number and diversity of industries and employers, as well as the population size</p>
 </li>
 </ul>
 
@@ -18742,28 +18516,15 @@ Reference for Median Household Income:  <a href="https://www.census.gov/quickfac
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Notes</p>
+<p>Outside of California:</p>
 <ul>
-<li><p>Income refers to income from all sources (i.e. what the IRS expects to report), including examples such as</p>
-<ul>
-<li>wages</li>
-<li>self-employment income</li>
-<li>social security income</li>
-<li>interest income</li>
-<li>capital gains from stock selling</li>
-<li>rental income</li>
-</ul>
+<li><p>Outside of California, Median Incomes are substantially lower than San Francisco County, from 15% to 50% lower.  This is likely do to with the diversity of industries, employers and population size.   However, if tech workers can telecommute, then they likely will enjoy SF County incomes, while living in substantially lower housing cost areas. Many people who move to NY are not for affordability reasons as NY has a lower income and comparable rents to SF. Which results with less money at the end of the month. They're not necessarily getting higher quality housing as they would in Oregon or Washington.</p>
 </li>
-<li><p>Household refers to the total income from all persons &gt; 15 years old</p>
+<li><p>Renting versus owning: In SF County, since housing values are so high, many are renters.  The median monthly rents are very similar in East Bay, and even higher in South Bay.  Thus, renting in a different Bay Area county is not likely a major attraction to move.  However, in LA or in other states, especially in Multnomah, Brooklyn, and Cook County, significant monthly rental savings are likely an attraction. People looking to own a home will move to counties in Washing, Oregon, and Illinois, but those who move to NY counties are less likely to own.</p>
 </li>
-<li><p>House refers to all types of Owner-Occupied Housing of all varieties including examples such as</p>
-<ul>
-<li>Condominimums</li>
-<li>Single Family homes</li>
-<li>Duplexes</li>
-<li>Boats</li>
-<li>RVs</li>
-</ul>
+<li><p>Significant savings in housing, due to lower home values, requiring lower mortgage amounts (or alternatively getting more house for the same house value), and attractive housing debt-to=income ratio are all compelling reasons for out-of-CA migration.</p>
+</li>
+<li><p>Outside of California, one main attraction to be move is the much higher number of industries in the counties, which could provide jobs to family members in the household who are not in the tech industry. In Manhattan they're actually closing more companies than creating. Chicago is the most appealing market to start a business in.</p>
 </li>
 </ul>
 
